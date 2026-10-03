@@ -147,6 +147,12 @@ dart test
 ```bash
 dart test --coverage=coverage
 dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
+```
+
+Результат зберігається у файлі:
+
+`coverage/lcov.info`
+
 ## Порівняння асинхронного виконання
 
 У `bin/task5_async.dart` реалізовано порівняння:
@@ -161,6 +167,8 @@ dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage
 ```text
 Sequential time: 3010 ms
 Parallel time: 1014 ms
+```
+
 ## Performance benchmark
 
 Для перевірки продуктивності створено файл:
@@ -176,6 +184,8 @@ Benchmark вимірює час виконання операцій над ко�
 
 ```bash
 dart run bin/benchmark.dart
+```
+
 ## Аналіз CSV-даних
 
 Для демонстрації обробки даних використовується файл:
@@ -189,6 +199,7 @@ dart run bin/benchmark.dart
 - найвищу оцінку;
 - найнижчу оцінку;
 - середню оцінку для кожного курсу.
+
 ## UML-діаграма
 
 UML-діаграма системи університету знаходиться у файлі:
@@ -216,6 +227,7 @@ UML-діаграма системи університету знаходить�
 ## Підсумок
 
 У практичній роботі реалізовано 5 програм мовою Dart, ООП-модель університету, роботу з колекціями, CSV та JSON-файлами, асинхронне програмування, unit-тести, coverage, UML-діаграму та performance benchmark.
+
 ## Автор
 
 Устич Максим
