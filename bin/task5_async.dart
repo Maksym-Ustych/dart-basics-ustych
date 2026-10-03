@@ -9,6 +9,7 @@ void main() async {
   await demonstrateFutures();
   await demonstrateStreams();
   await demonstrateFileOperations();
+  await demonstratePerformanceComparison();
 }
 
 Future<String> fetchStudentData(String studentId) async {
@@ -138,4 +139,36 @@ Future<void> demonstrateFileOperations() async {
   } catch (error) {
     print('File operation error: $error');
   }
+}
+
+Future<void> demonstratePerformanceComparison() async {
+  print('\n--- Performance Comparison ---');
+
+  final sequentialStopwatch = Stopwatch()..start();
+
+  await fetchStudentData('S001');
+  await fetchStudentData('S002');
+  await fetchStudentData('S003');
+
+  sequentialStopwatch.stop();
+
+  final parallelStopwatch = Stopwatch()..start();
+
+  await Future.wait([
+    fetchStudentData('S001'),
+    fetchStudentData('S002'),
+    fetchStudentData('S003'),
+  ]);
+
+  parallelStopwatch.stop();
+
+  print(
+    'Sequential time: '
+    '${sequentialStopwatch.elapsedMilliseconds} ms',
+  );
+
+  print(
+    'Parallel time: '
+    '${parallelStopwatch.elapsedMilliseconds} ms',
+  );
 }
