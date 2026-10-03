@@ -97,5 +97,23 @@ void main() {
       expect(json['firstName'], 'Maksym');
       expect(json['lastName'], 'Ustych');
     });
+
+    test('Student converts from JSON correctly', () {
+      final json = {
+        'id': 'S002',
+        'firstName': 'Ivan',
+        'lastName': 'Petrenko',
+        'birthDate': '2001-07-20T00:00:00.000',
+        'enrolledCourses': ['C001'],
+        'grades': {'C001': 75.0},
+      };
+
+      final student = Student.fromJson(json);
+
+      expect(student.id, 'S002');
+      expect(student.fullName, 'Ivan Petrenko');
+      expect(student.enrolledCourses, contains('C001'));
+      expect(student.grades['C001'], 75.0);
+    });
   });
 }
