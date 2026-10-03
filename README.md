@@ -147,6 +147,20 @@ All tests passed!
 ```bash
 dart test --coverage=coverage
 dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
+## Порівняння асинхронного виконання
+
+У `bin/task5_async.dart` реалізовано порівняння:
+
+- послідовного виконання трьох асинхронних операцій;
+- паралельного виконання через `Future.wait`.
+
+Час виконання вимірюється за допомогою `Stopwatch`.
+
+Приклад результату:
+
+```text
+Sequential time: 3010 ms
+Parallel time: 1014 ms
 ## Performance benchmark
 
 Для перевірки продуктивності створено файл:
