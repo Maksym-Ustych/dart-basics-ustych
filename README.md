@@ -33,19 +33,24 @@ dart --version
 ```text
 dart_basics_ustych/
 ├── bin/
+│   ├── benchmark.dart
 │   ├── task1_variables.dart
 │   ├── task2_functions.dart
 │   ├── task3_classes.dart
 │   ├── task4_collections.dart
 │   └── task5_async.dart
+├── docs/
+│   └── uml.md
 ├── lib/
 │   ├── models/
 │   │   ├── student.dart
 │   │   ├── course.dart
 │   │   └── university.dart
-│   └── utils/
-│       ├── calculator.dart
-│       └── data_processor.dart
+│   ├── utils/
+│   │   ├── calculator.dart
+│   │   └── data_processor.dart
+│   └── students_sample.csv
+├── screenshots/
 ├── test/
 │   ├── calculator_test.dart
 │   ├── models_test.dart
