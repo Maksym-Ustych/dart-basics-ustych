@@ -133,6 +133,15 @@ dart test
 ```text
 All tests passed!
 ```
+## Покриття тестами
+
+Для перевірки покриття коду використовується пакет `coverage`.
+
+Команди:
+
+```bash
+dart test --coverage=coverage
+dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
 ## Performance benchmark
 
 Для перевірки продуктивності створено файл:
