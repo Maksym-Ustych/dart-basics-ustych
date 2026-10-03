@@ -1,0 +1,26 @@
+[
+  {
+    "id": "S001",
+    "firstName": "Maksym",
+    "lastName": "Ustych",
+    "birthDate": "2000-01-15T00:00:00.000",
+    "enrolledCourses": [
+      "C001"
+    ],
+    "grades": {
+      "C001": 92.0
+    }
+  },
+  {
+    "id": "S002",
+    "firstName": "Ivan",
+    "lastName": "Petrenko",
+    "birthDate": "2001-07-20T00:00:00.000",
+    "enrolledCourses": [
+      "C001"
+    ],
+    "grades": {
+      "C001": 75.0
+    }
+  }
+]

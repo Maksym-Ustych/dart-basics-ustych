@@ -1,0 +1,6 @@
+id,firstName,lastName,birthDate,courseId,grade
+S001,Maksym,Ustych,2000-01-01,C001,85
+S002,Anna,Koval,2001-05-12,C001,82
+S003,Ivan,Petrenko,1999-11-20,C002,90
+S004,Olena,Shevchenko,2002-03-08,C002,88
+S005,Andrii,Bondar,2000-07-15,C003,76
